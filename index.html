@@ -559,50 +559,71 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Let's Connect</h2>
-                <div class="underline"></div>
-                <p>Ready to collaborate or have opportunities? I'd love to hear from you!</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>dabbiz11@gmail.com</p>
-                        <p>dabbiz11@yahoo.com</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>+234 802 422 0494</p>
-                        <p>+234 810 460 4766</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <p>linkedin.com/in/adeola-adewale-ba120997</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Nigeria | Open to Remote & Hybrid</p>
-                    </div>
-                </div>
-              <form class="contact-form" action="https://formspree.io/f/xeepeqby" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="subject" placeholder="Subject">
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn-primary">Send Message</button>
-    <div id="formMessage"></div>
-</form>
-            </div>
+   <section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Let's Connect</h2>
+            <div class="underline"></div>
+            <p>Ready to collaborate? Reach out to me!</p>
         </div>
-    </section>
-
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <!-- Email - Opens Gmail or default email app -->
+                <a href="mailto:dabbiz11@gmail.com?subject=Hello%20Adeola&body=I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect..." class="contact-card" style="text-decoration: none; display: block;">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>dabbiz11@gmail.com</p>
+                    <p style="font-size: 12px; color: #6366F1;">Click to send email →</p>
+                </a>
+                
+                <!-- Phone - Opens dialer on mobile -->
+                <a href="tel:+2348024220494" class="contact-card" style="text-decoration: none; display: block;">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone (Primary)</h3>
+                    <p>+234 802 422 0494</p>
+                    <p style="font-size: 12px; color: #6366F1;">Click to call →</p>
+                </a>
+                
+                <!-- Second Phone Number -->
+                <a href="tel:+2348104604766" class="contact-card" style="text-decoration: none; display: block;">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone (Secondary)</h3>
+                    <p>+234 810 460 4766</p>
+                    <p style="font-size: 12px; color: #6366F1;">Click to call →</p>
+                </a>
+                
+                <!-- LinkedIn - Opens in new tab -->
+                <a href="https://linkedin.com/in/adeola-adewale-ba120997" target="_blank" rel="noopener noreferrer" class="contact-card" style="text-decoration: none; display: block;">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally</p>
+                    <p style="font-size: 12px; color: #6366F1;">Opens LinkedIn →</p>
+                </a>
+                
+                <!-- Location - Opens Google Maps -->
+                <a href="https://maps.google.com/?q=Nigeria" target="_blank" class="contact-card" style="text-decoration: none; display: block;">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Nigeria | Open to Remote & Hybrid</p>
+                    <p style="font-size: 12px; color: #6366F1;">View on map →</p>
+                </a>
+            </div>
+            
+            <!-- Contact Form -->
+            <form class="contact-form" action="https://formsubmit.co/dabbiz11@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_next" value="https://dabbiz11.github.io/My-Portfolio/?message=sent">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New message from your Portfolio!">
+                <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                <p style="font-size: 12px; color: #6B7280; margin-top: 10px;">I'll respond within 24-48 hours</p>
+            </form>
+        </div>
+    </div>
+</section>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
